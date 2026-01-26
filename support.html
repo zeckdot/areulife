@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活着么 应用支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #6e6e73;
+        }
+        
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: #1d1d1f;
+            margin: 20px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #424245;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-item strong {
+            color: #1d1d1f;
+        }
+        
+        .faq-list {
+            list-style-type: none;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e5e5ea;
+            padding-bottom: 15px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            color: #424245;
+            display: none;
+            margin-top: 10px;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .copyright {
+            text-align: center;
+            color: #86868b;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Are U Life</h1>
+            <p class="subtitle">活着么 - 应用支持中心</p>
+        </header>
+        
+        <div class="section">
+            <h2>关于应用</h2>
+            <p>活着么 是一款专注于生活记录和紧急联系人管理的应用，帮助用户记录重要生活信息，并在紧急情况下及时联系到家人和朋友。</p>
+        </div>
+        
+        <div class="section">
+            <h2>联系支持</h2>
+            <p>如果您在使用过程中遇到任何问题，或者有任何建议，欢迎通过以下方式联系我们：</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>电子邮件：</strong> zeckdot@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>支持时间：</strong> 周一至周五 9:00-18:00（北京时间）
+                </div>
+                <div class="contact-item">
+                    <strong>响应时间：</strong> 我们会在 24-48 小时内回复您的邮件
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>常见问题（FAQ）</h2>
+            
+            <ul class="faq-list">
+                <li class="faq-item">
+                    <div class="faq-question">
+                        <span>如何设置紧急联系人？</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>1. 打开应用，进入「紧急联系人」页面</p>
+                        <p>2. 点击「添加联系人」按钮</p>
+                        <p>3. 填写联系人信息，包括姓名、关系、电话号码等</p>
+                        <p>4. 点击「保存」按钮完成设置</p>
+                    </div>
+                </li>
+                
+                <li class="faq-item">
+                    <div class="faq-question">
+                        <span>如何使用「紧急签到」功能？</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>1. 打开应用，进入「紧急签到」页面</p>
+                        <p>2. 点击「签到」按钮</p>
+                        <p>3. 系统会自动记录您的签到时间和位置</p>
+                        <p>4. 如果您超过设定时间未签到，系统会自动通知您的紧急联系人</p>
+                    </div>
+                </li>
+                
+                <li class="faq-item">
+                    <div class="faq-question">
+                        <span>如何修改个人资料？</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>1. 打开应用，进入「我的」页面</p>
+                        <p>2. 点击「编辑资料」按钮</p>
+                        <p>3. 修改您的个人信息，包括姓名、头像、生日等</p>
+                        <p>4. 点击「保存」按钮完成修改</p>
+                    </div>
+                </li>
+                
+                <li class="faq-item">
+                    <div class="faq-question">
+                        <span>如何删除应用数据？</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>1. 打开应用，进入「设置」页面</p>
+                        <p>2. 点击「清除数据」选项</p>
+                        <p>3. 确认清除操作，系统会删除所有应用数据</p>
+                        <p>注意：此操作不可逆，请谨慎操作</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>使用指南</h2>
+            
+            <h3>首次使用</h3>
+            <p>1. 下载并安装 活着么 应用</p>
+            <p>2. 打开应用，按照提示完成初始设置</p>
+            <p>3. 设置您的紧急联系人信息</p>
+            <p>4. 开启通知权限，以便接收重要提醒</p>
+            
+            <h3>主要功能</h3>
+            <p>• 紧急联系人管理：添加、编辑、删除紧急联系人</p>
+            <p>• 紧急签到：定期签到，确保安全</p>
+            <p>• 遗嘱管理：记录重要遗嘱信息</p>
+            <p>• 殡葬服务：提供殡葬服务信息</p>
+            <p>• 个人资料：管理个人基本信息</p>
+        </div>
+        
+        <div class="section">
+            <h2>隐私政策</h2>
+            <p>我们非常重视您的隐私，您可以在应用内查看完整的隐私政策，或者访问我们的官方网站获取更多信息。</p>
+        </div>
+        
+        <div class="section">
+            <h2>服务条款</h2>
+            <p>使用 活着么 应用即表示您同意我们的服务条款，您可以在应用内查看完整的服务条款内容。</p>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2026 活着么. 保留所有权利。</p>
+        </div>
+    </div>
+    
+    <script>
+        // FAQ 折叠功能
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
